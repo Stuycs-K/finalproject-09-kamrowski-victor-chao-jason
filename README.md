@@ -17,3 +17,4 @@ How does the user interact with this program? (CHANGE THIS!!!!!)
 ### Resources/ References:
 
 [md5 tutorial](https://www.comparitech.com/blog/information-security/md5-algorithm-with-examples/)
+[geeksforgeeks](https://www.geeksforgeeks.org/what-is-the-md5-algorithm/)
