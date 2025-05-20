@@ -1,18 +1,22 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/am3xLbu5)
-# PROJECT NAME HERE (CHANGE THIS!!!!!)
+# The MD5 Algorithm
  
-### GROUP NAME HERE (CHANGE THIS!!!!!)
+### JV Hashers
 
-Group Members Here (CHANGE THIS!!!!!)
+Victor Kamrowski  
+Jason Chao
        
 ### Project Description:
 
-Explain what is this project. (CHANGE THIS!!!!!)
+This project is a program replicating the MD5 hashing algorithm. There will be files containing the significant individual operations within the algorithm, and a Main file that compiles it all together to do the hash in one go.
   
 ### Instructions:
 
-How does the user install/compile/run the program. (CHANGE THIS!!!!!)
-How does the user interact with this program? (CHANGE THIS!!!!!)
+**Installation**  
+Clone the repository: `git clone git@github.com:Stuycs-K/finalproject-09-kamrowski-victor-chao-jason.git`.
+
+**Running the Program**  
+Run the main program to hash text: `make input ARGS="<input_string>"`.
 
 ### Resources/ References:
 
