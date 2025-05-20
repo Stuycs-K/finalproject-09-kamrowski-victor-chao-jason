@@ -11,5 +11,7 @@ This document must be updated daily every time you finish a work session.
 **At Home**
  - Read the rest of the in-depth article on MD5.
 
+### 2025
+
 ### 2024-01-03 - Brief description
 Expanded description including how much time was spent on task.
