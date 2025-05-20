@@ -11,6 +11,7 @@ Read 'The MD5 algorithm (with examples)' linked in README (really long article) 
 Decided with Jason how to split separate steps (each step separate java file, e.g. padding first step: padding.java) (10 mins)
 
 At home:
-Finished reading article, made distinct files for different parts
+Finished reading in-depth article, made distinct files for different parts (30 mins)
+(Now have complete understanding of entire md5 algorithm)
 
 ### 2024-01-03 - Brief description
