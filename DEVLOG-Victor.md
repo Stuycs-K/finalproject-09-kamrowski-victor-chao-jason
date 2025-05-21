@@ -14,4 +14,7 @@ At home:
 Finished reading in-depth article, made distinct files for different parts (30 mins)
 (Now have complete understanding of entire md5 algorithm)
 
-### 2024-01-03 - Brief description
+### 2025-05-20 - Started first part of md5 algorithm
+
+In class:
+Started Padding.java and turning input strings into hex (40 mins)
