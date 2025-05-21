@@ -15,10 +15,20 @@ public static void main(String[] args){
 }
 
 public static void pad(String inputStr){
+  StringBuilder binary = new StringBuilder();
   for(int x = 0;x<inputStr.length();x++){
-    StringBuilder binary = new StringBuilder();
-    int asciival = Integer.valueOf(inputStr.charAt(x));
+    int forbin = Integer.valueOf(inputStr.charAt(x));
+    String str = "";
+    for(int bin = 128;x>=1;x=x/2){
+      if(forbin/bin>0){
+        str = str + "1";
+        forbin = forbin - bin;
+      }else{
+        str = str + "0";
+      }
+    }
   }
+  
 }
 
 
