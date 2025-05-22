@@ -1,7 +1,7 @@
 public class Padding{
 
 public static String input = "";
-public static String[16] hexStrings; //for 512 bit strings there will be 64 bytes. there will be 16 hex vals.
+public static String[] hexStrings = new String[16]; //for 512 bit strings there will be 64 bytes. there will be 16 hex vals.
 
 public static void main(String[] args){
   if(args.length<1){
@@ -19,6 +19,17 @@ public static void pad(String inputStr){
   for(int x = 0;x<inputStr.length();x++){
     int forbin = Integer.valueOf(inputStr.charAt(x));
     String str = "";
+    str = intToBinary(forbin);
+    binary.append(str);
+  }
+  int lengthpad = binary.length();
+  String lengthBin = intToBinary(lengthpad);
+  
+
+}
+
+public static String intToBinary(int int1){
+  String str = "";
     for(int bin = 128;x>=1;x=x/2){
       if(forbin/bin>0){
         str = str + "1";
@@ -27,8 +38,7 @@ public static void pad(String inputStr){
         str = str + "0";
       }
     }
-  }
-  
+    return str;
 }
 
 
