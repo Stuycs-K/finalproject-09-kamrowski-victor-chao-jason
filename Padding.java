@@ -11,10 +11,10 @@ public static void main(String[] args){
   for(int x = 0;x<args.length;x++){
     input = input + args[x];
   }
-  pad(input);
+  String paddedStr = pad(input);
 }
 
-public static void pad(String inputStr){
+public static String pad(String inputStr){
   StringBuilder binary = new StringBuilder();
   for(int x = 0;x<inputStr.length();x++){
     int forbin = Integer.valueOf(inputStr.charAt(x));
@@ -25,13 +25,16 @@ public static void pad(String inputStr){
   int lengthpad = binary.length();
   String lengthBin = intToBinary(lengthpad);
 String end64bits = zerosPad(-1, 64, lengthBin); // FOR LAST 64 BITS
+binary.append("1");
 binary = new StringBuilder(zerosPad(1,448,binary.toString()));
 binary.append(end64bits);
+return binary.toString();
 }
 
 public static String intToBinary(int int1){
   String str = "";
-    for(int bin = 128;x>=1;x=x/2){
+  int forbin = int1;
+    for(int bin = 128;bin>=1;bin=bin/2){
       if(forbin/bin>0){
         str = str + "1";
         forbin = forbin - bin;
