@@ -21,11 +21,12 @@ public static void pad(String inputStr){
     String str = "";
     str = intToBinary(forbin);
     binary.append(str);
-  }
+  } // AT THIS POINT BINARY HAS THE MESSAGE IN BINARY
   int lengthpad = binary.length();
   String lengthBin = intToBinary(lengthpad);
-
-
+String end64bits = zerosPad(-1, 64, lengthBin); // FOR LAST 64 BITS
+binary = new StringBuilder(zerosPad(1,448,binary.toString()));
+binary.append(end64bits);
 }
 
 public static String intToBinary(int int1){
