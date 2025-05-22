@@ -24,7 +24,7 @@ public static void pad(String inputStr){
   }
   int lengthpad = binary.length();
   String lengthBin = intToBinary(lengthpad);
-  
+
 
 }
 
@@ -39,6 +39,26 @@ public static String intToBinary(int int1){
       }
     }
     return str;
+}
+
+public static String zerosPad(int location,int endlength,String initStr){
+  if(location==0){
+    System.out.println("location has to be pos. or neg. not zero");
+    return "";
+  } // location cannot equal 0
+  StringBuilder addzeros = new StringBuilder(); //location negative -> pad before string. location positive -> pad after string
+  if(location<0){
+    for(int x = 0;x<endlength-initStr.length();x++){
+      addzeros.append("0");
+    }
+    addzeros.append(initStr);
+  }else{
+    addzeros.append(initStr);
+    for(int x = 0;x<endlength-initStr.length();x++){
+      addzeros.append("0");
+    }
+  }
+  return addzeros.toString();
 }
 
 
