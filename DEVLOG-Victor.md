@@ -18,3 +18,13 @@ Finished reading in-depth article, made distinct files for different parts (30 m
 
 In class:
 Started Padding.java and turning input strings into hex (40 mins)
+
+### 2025-05-21 - Finished first part of md5 algorithm (padding)
+
+In class:
+Switched padding method from string to hex to string to binary. Continued working on padding method. (40 mins)
+
+At home:
+Made string to binary method (15 mins)
+Made zerosPad method which pads the binary given (as a string) and adds zeros (until a given length) either to the left or right or the message (needed for both ending 64 bits of length and original input) (20 mins)
+Added everything together in pad method, fully complete (15 mins)
