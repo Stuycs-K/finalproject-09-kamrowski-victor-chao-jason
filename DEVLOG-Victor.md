@@ -28,3 +28,9 @@ At home:
 Made string to binary method (15 mins)
 Made zerosPad method which pads the binary given (as a string) and adds zeros (until a given length) either to the left or right or the message (needed for both ending 64 bits of length and original input) (20 mins)
 Added everything together in pad method, fully complete (15 mins)
+
+### 2025-05-22: Edited makefile and padding, confirmed with testing
+
+At home (no in class had an AP):
+Makefile editing (5 mins)
+Fixing, debugging, and testing (20 mins)
