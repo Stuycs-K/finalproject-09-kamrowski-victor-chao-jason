@@ -1,5 +1,5 @@
 public class Utils {
-    public int[] KConstants = {
+    public static int[] KConstants = {
         0xD76AA478,
         0xE8C7B756,
         0x242070DB,
@@ -81,7 +81,7 @@ public class Utils {
         return byteArray;
     }
 
-    public int[] SValues = {
+    public static int[] SValues = {
         // ROUND ONE
         7, 12, 17, 22,  // S1, S2, S3, S4
         7, 12, 17, 22,
