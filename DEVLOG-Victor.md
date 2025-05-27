@@ -47,7 +47,7 @@ Finished padding 100% by turning huge binary string into 16 ints (15 mins)
 Edited utils as necessary (10 mins)
 Finished base and all operations of operation one (30 mins)
 
-### 2025-05-27: Made bitwise methods for operations two, three, four, started working each operation itself
+### 2025-05-27: Made bitwise methods for operations two, three, four, made each operation itself
 
 In class:
 Made bitwise operations for operations two, three, and four (20 mins)
