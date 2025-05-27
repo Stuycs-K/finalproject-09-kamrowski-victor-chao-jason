@@ -34,3 +34,15 @@ Added everything together in pad method, fully complete (15 mins)
 At home (no in class had an AP):
 Makefile editing (5 mins)
 Fixing, debugging, and testing (20 mins)
+
+### 2025-05-23/24/25/26: Made base of operation one, edited constants, utils, and added functions as necessary, finished padding 100%
+
+In class:
+Read about using bitwise and hex/decimal/binary ints and conversions (30 mins)
+Made F function (10 mins)
+
+At home:
+Added Padding method for binary string to int (5 mins)
+Finished padding 100% by turning huge binary string into 16 ints (15 mins)
+Edited utils as necessary (10 mins)
+Finished base and all operations of operation one (30 mins)
