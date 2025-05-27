@@ -51,3 +51,4 @@ Finished base and all operations of operation one (30 mins)
 
 In class:
 Made bitwise operations for operations two, three, and four (20 mins)
+Made each individual operation method with each different bitwise methods (20 mins)
