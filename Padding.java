@@ -2,7 +2,7 @@ import java.math.BigInteger;
 public class Padding{
 
 public static String input = "";
-public static long[] hexStrings = new long[16]; //for 512 bit strings there will be 64 bytes. there will be 16 hex vals.
+public static BigInteger[] hexStrings = new BigInteger[16]; //for 512 bit strings there will be 64 bytes. there will be 16 hex vals.
 
 
 
@@ -37,8 +37,9 @@ public static String intToBinary(int int1){
     return str;
 }
 
-public static Long binaryStringtoInt(String str){
-  return Long.parseLong(str,2);
+public static BigInteger binaryStringtoInt(String str){
+  BigInteger bigint = new BigInteger(str,2);
+  return bigint;
 }
 
 public static String zerosPad(int location,int endlength,String initStr){
