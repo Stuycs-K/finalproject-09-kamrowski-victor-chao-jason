@@ -1,5 +1,5 @@
-public class Utils {   
-     public String[] KConstants = {
+public class Utils {
+     public static String[] KConstants = {
         "D76AA478",
         "E8C7B756",
         "242070DB",
