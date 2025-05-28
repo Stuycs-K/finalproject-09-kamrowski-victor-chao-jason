@@ -1,17 +1,27 @@
+import java.math.BigInteger;
 public class Op_One{
 
-public static long A = 0x01234567;
-public static long B = 0x89ABCDEF;
-public static long C = 0xFEDCBA98;
-public static long D = 0x76543210;
+//public static long A = 0x01234567;
+//public static long B = 0x89ABCDEF;
+//public static long C = 0xFEDCBA98;
+//public static long D = 0x76543210;
+public static void main(String[] args){
+  F(B,C,D);
+}
+public static BigInteger A = new BigInteger("01234567",16);
+public static BigInteger B = new BigInteger("89ABCDEF",16);
+public static BigInteger C = new BigInteger("FEDCBA98",16);
+public static BigInteger D = new BigInteger("76543210",16);
 
-  public static long F(long b,long c, long d){
-    System.out.println(b&c);
-    long newval = (b&c)|((~b)&d);
+  public static BigInteger F(BigInteger b,BigInteger c, BigInteger d){
+   // System.out.println(b.and(c));
+    //long newval = (b&c)|((~b)&d);
+    BigInteger newval = (b.and(c)).or((b.not().and(d)));
+    System.out.println(newval);
     return newval;
   }
 
-  public static long modularAddition(long X,long Y,long Z){
+ /*  public static long modularAddition(long X,long Y,long Z){
     return (X+Y)%Z;
   }
 
@@ -35,5 +45,5 @@ public static long D = 0x76543210;
     B = MA4;
     C = b;
     D = c;
-  }
+  }*/
 }
