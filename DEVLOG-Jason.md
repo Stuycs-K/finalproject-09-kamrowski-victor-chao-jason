@@ -27,8 +27,11 @@ This document must be updated daily every time you finish a work session.
 ### 2025-05-23 - K Constants Completed + Starting S Constants
 **In Class**  
  - Completed a helper function. Returns a 2D array of Bytes of size 64x4.
- - Started creation of S Constants array.
+ - Started creation of SConstants array.
 
+### 2025-05-28 - Changes to Utils
+**In Class**
+ - Reverted KConstants to String format.
 
 
 ### 2024-01-03 - Brief description
