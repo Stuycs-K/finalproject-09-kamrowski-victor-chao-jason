@@ -1,86 +1,86 @@
-public class Utils {
-    public static int[] KConstants = {
-        0xD76AA478,
-        0xE8C7B756,
-        0x242070DB,
-        0xC1BDCEEE,
-        0xF57C0FAF,
-        0x4787C62A,
-        0xA8304613,
-        0xFD469501,
-        0x698098D8,
-        0x8B44F7AF,
-        0xFFFF5BB1,
-        0x895CD7BE,
-        0x6B901122,
-        0xFD987193,
-        0xA679438E,
-        0x49B40821,
-        0xF61E2562,
-        0xC040B340,
-        0x265E5A51,
-        0xE9B6C7AA,
-        0xD62F105D,
-        0x02441453,
-        0xD8A1E681,
-        0xE7D3FBC8,
-        0x21E1CDE6,
-        0xC33707D6,
-        0xF4D50D87,
-        0x455A14ED,
-        0xA9E3E905,
-        0xFCEFA3F8,
-        0x676F02D9,
-        0x8D2A4C8A,
-        0xFFFA3942,
-        0x8771F681,
-        0x699D6122,
-        0xFDE5380C,
-        0xA4BEEA44,
-        0x4BDECFA9,
-        0xF6BB4B60,
-        0xBEBFBC70,
-        0x289B7EC6,
-        0xEAA127FA,
-        0xD4EF3085,
-        0x04881D05,
-        0xD9D4D039,
-        0xE6DB99E5,
-        0x1FA27CF8,
-        0xC4AC5665,
-        0xF4292244,
-        0x432AFF97,
-        0xAB9423A7,
-        0xFC93A039,
-        0x655B59C3,
-        0x8F0CCC92,
-        0xFFEFF47D,
-        0x85845DD1,
-        0x6FA87E4F,
-        0xFE2CE6E0,
-        0xA3014314,
-        0x4E0811A1,
-        0xF7537E82,
-        0xBD3AF235,
-        0x2AD7D2BB,
-        0xEB86D391,
+public class Utils {   
+     public String[] KConstants = {
+        "D76AA478",
+        "E8C7B756",
+        "242070DB",
+        "C1BDCEEE",
+        "F57C0FAF",
+        "4787C62A",
+        "A8304613",
+        "FD469501",
+        "698098D8",
+        "8B44F7AF",
+        "FFFF5BB1",
+        "895CD7BE",
+        "6B901122",
+        "FD987193",
+        "A679438E",
+        "49B40821",
+        "F61E2562",
+        "C040B340",
+        "265E5A51",
+        "E9B6C7AA",
+        "D62F105D",
+        "02441453",
+        "D8A1E681",
+        "E7D3FBC8",
+        "21E1CDE6",
+        "C33707D6",
+        "F4D50D87",
+        "455A14ED",
+        "A9E3E905",
+        "FCEFA3F8",
+        "676F02D9",
+        "8D2A4C8A",
+        "FFFA3942",
+        "8771F681",
+        "699D6122",
+        "FDE5380C",
+        "A4BEEA44",
+        "4BDECFA9",
+        "F6BB4B60",
+        "BEBFBC70",
+        "289B7EC6",
+        "EAA127FA",
+        "D4EF3085",
+        "04881D05",
+        "D9D4D039",
+        "E6DB99E5",
+        "1FA27CF8",
+        "C4AC5665",
+        "F4292244",
+        "432AFF97",
+        "AB9423A7",
+        "FC93A039",
+        "655B59C3",
+        "8F0CCC92",
+        "FFEFF47D",
+        "85845DD1",
+        "6FA87E4F",
+        "FE2CE6E0",
+        "A3014314",
+        "4E0811A1",
+        "F7537E82",
+        "BD3AF235",
+        "2AD7D2BB",
+        "EB86D391",
     };
 
-   /*  public Byte[][] KToBytesArray() {
-        Byte[][] byteArray = new Byte[this.KConstants.length][4];
-        for (int i = 0; i < this.KConstants.length; i++) {
-            String constant = this.KConstants[i];
-            for (int j = 0; j < 4; j++) {
-                // System.out.println(constant.substring(j * 2, j * 2 + 2));
-                int val = Integer.parseInt(constant.substring(j * 2, j * 2 + 2), 16);
-                Byte byteVal = Byte.valueOf((byte) val);
-                System.out.println(val + " = " + byteVal.intValue() + " = " + String.format("%8s", Integer.toBinaryString(byteVal & 0xFF)).replace(' ', '0'));
-                byteArray[i][j] = byteVal;
-            }
-        }
-        return byteArray;
-    }
-    */
+    // public Byte[][] KToBytesArray() {
+    //     Byte[][] byteArray = new Byte[this.KConstants.length][4];
+    //     for (int i = 0; i < this.KConstants.length; i++) {
+    //         String constant = this.KConstants[i];
+    //         for (int j = 0; j < 4; j++) {
+    //             // System.out.println(constant.substring(j * 2, j * 2 + 2));
+    //             int val = Integer.parseInt(constant.substring(j * 2, j * 2 + 2), 16);
+    //             Byte byteVal = Byte.valueOf((byte) val);
+    //             System.out.println(val + " = " + byteVal.intValue() + " = " + String.format("%8s", Integer.toBinaryString(byteVal & 0xFF)).replace(' ', '0'));
+    //             byteArray[i][j] = byteVal;
+    //         }
+    //     }
+    //     return byteArray;
+    // }
+
 
     public static int[] SValues = {
         // ROUND ONE

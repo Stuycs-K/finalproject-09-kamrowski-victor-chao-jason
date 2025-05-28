@@ -17,6 +17,7 @@ This document must be updated daily every time you finish a work session.
  - Read the Wikipedia article, mainly paying attention to the pseudocode provided.
  - Began testing ways to store K values for the algorithm.
  - Created a `Test.java` file for making helper functions in `Utils.java`.
+ - Created `MD5_actual.java` which returns correct output for the MD5 hash.
 
 ### 2025-05-21 - K Constants (continued)
 **In Class**  
@@ -27,6 +28,8 @@ This document must be updated daily every time you finish a work session.
 **In Class**  
  - Completed a helper function. Returns a 2D array of Bytes of size 64x4.
  - Started creation of S Constants array.
+
+
 
 ### 2024-01-03 - Brief description
 Expanded description including how much time was spent on task.
