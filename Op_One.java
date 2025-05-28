@@ -17,14 +17,15 @@ public static BigInteger D = new BigInteger("76543210",16);
    // System.out.println(b.and(c));
     //long newval = (b&c)|((~b)&d);
     BigInteger newval = (b.and(c)).or((b.not().and(d)));
-    System.out.println(newval);
+    //System.out.println(newval);
     return newval;
   }
 
- /*  public static long modularAddition(long X,long Y,long Z){
+   public static BigInteger modularAddition(BigInteger X,BigInteger Y,BigInteger Z){
+    BigInteger newval = 
     return (X+Y)%Z;
   }
-
+/* 
   public static void opOne(long a,long b,long c, long d,int hexStrInt,int kConstAndSInt){
     long F1 = F(b,c,d);
     System.out.println(F1);
