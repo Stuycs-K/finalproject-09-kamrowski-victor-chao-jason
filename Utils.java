@@ -66,7 +66,7 @@ public class Utils {
         0xEB86D391,
     };
 
-    public Byte[][] KToBytesArray() {
+   /*  public Byte[][] KToBytesArray() {
         Byte[][] byteArray = new Byte[this.KConstants.length][4];
         for (int i = 0; i < this.KConstants.length; i++) {
             String constant = this.KConstants[i];
@@ -80,6 +80,7 @@ public class Utils {
         }
         return byteArray;
     }
+    */
 
     public static int[] SValues = {
         // ROUND ONE
@@ -94,7 +95,17 @@ public class Utils {
         5, 9, 14, 20,
         5, 9, 14, 20,
 
-        // CONTINUE THIS
-    }
+        //r3
+        4,11,16,13,
+        4,11,16,13,
+        4,11,16,13,
+        4,11,16,13,
+
+        // r4
+        6,10,15,21,
+        6,10,15,21,
+        6,10,15,21,
+        6,10,15,21
+    };
 
 }
