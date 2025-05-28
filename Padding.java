@@ -3,21 +3,7 @@ public class Padding{
 public static String input = "";
 public static int[] hexStrings = new int[16]; //for 512 bit strings there will be 64 bytes. there will be 16 hex vals.
 
-public static void main(String[] args){
-  if(args.length<1){
-    System.out.println("no args provided. Use make input ARGS='<input>'");
-    return;
-  }
-  for(int x = 0;x<args.length;x++){
-    input = input + args[x];
-  }
-  String paddedStr = pad(input);
-  for(int x = 0;x<16;x++){
-    hexStrings[x] = binaryStringtoInt(paddedStr.substring(32*x,32*(x+1)));
-    //System.out.println(hexStrings[x]);
-  }
 
-}
 
 public static String pad(String inputStr){
   StringBuilder binary = new StringBuilder();
