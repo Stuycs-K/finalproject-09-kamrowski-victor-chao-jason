@@ -1,5 +1,5 @@
 public class Utils {
-     public static String[] KConstants = {
+    public static String[] KConstants = {
         "D76AA478",
         "E8C7B756",
         "242070DB",
@@ -67,45 +67,46 @@ public class Utils {
     };
 
     // public Byte[][] KToBytesArray() {
-    //     Byte[][] byteArray = new Byte[this.KConstants.length][4];
-    //     for (int i = 0; i < this.KConstants.length; i++) {
-    //         String constant = this.KConstants[i];
-    //         for (int j = 0; j < 4; j++) {
-    //             // System.out.println(constant.substring(j * 2, j * 2 + 2));
-    //             int val = Integer.parseInt(constant.substring(j * 2, j * 2 + 2), 16);
-    //             Byte byteVal = Byte.valueOf((byte) val);
-    //             System.out.println(val + " = " + byteVal.intValue() + " = " + String.format("%8s", Integer.toBinaryString(byteVal & 0xFF)).replace(' ', '0'));
-    //             byteArray[i][j] = byteVal;
-    //         }
-    //     }
-    //     return byteArray;
+    // Byte[][] byteArray = new Byte[this.KConstants.length][4];
+    // for (int i = 0; i < this.KConstants.length; i++) {
+    // String constant = this.KConstants[i];
+    // for (int j = 0; j < 4; j++) {
+    // // System.out.println(constant.substring(j * 2, j * 2 + 2));
+    // int val = Integer.parseInt(constant.substring(j * 2, j * 2 + 2), 16);
+    // Byte byteVal = Byte.valueOf((byte) val);
+    // System.out.println(val + " = " + byteVal.intValue() + " = " +
+    // String.format("%8s", Integer.toBinaryString(byteVal & 0xFF)).replace(' ',
+    // '0'));
+    // byteArray[i][j] = byteVal;
     // }
-
+    // }
+    // return byteArray;
+    // }
 
     public static int[] SValues = {
         // ROUND ONE
-        7, 12, 17, 22,  // S1, S2, S3, S4
+        7, 12, 17, 22, // S1, S2, S3, S4
         7, 12, 17, 22,
         7, 12, 17, 22,
         7, 12, 17, 22,
 
         // ROUND TWO
-        5, 9, 14, 20,   // S17, S18, S19, S20
+        5, 9, 14, 20, // S17, S18, S19, S20
         5, 9, 14, 20,
         5, 9, 14, 20,
         5, 9, 14, 20,
 
-        //r3
-        4,11,16,13,
-        4,11,16,13,
-        4,11,16,13,
-        4,11,16,13,
+        // r3
+        4, 11, 16, 13,
+        4, 11, 16, 13,
+        4, 11, 16, 13,
+        4, 11, 16, 13,
 
         // r4
-        6,10,15,21,
-        6,10,15,21,
-        6,10,15,21,
-        6,10,15,21
+        6, 10, 15, 21,
+        6, 10, 15, 21,
+        6, 10, 15, 21,
+        6, 10, 15, 21
     };
 
 }

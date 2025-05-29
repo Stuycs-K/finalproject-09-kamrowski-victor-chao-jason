@@ -6,32 +6,40 @@ This document must be updated daily every time you finish a work session.
 
 ### 2025-05-19 - Algorithm Research and Next Steps
 **In Class**  
- - Found reference articles detailing the MD5 algorithm steps.
- - Created files that contain each individual step, and then a Main that combines it all together.
+ - Found reference articles detailing the MD5 algorithm steps. (15 mins)
+ - Created files that contain each individual step, and then a Main that combines it all together. (5 mins)
 **At Home**
- - Read the rest of the in-depth article on MD5.
+ - Read the rest of the in-depth article on MD5. (45 mins)
 
 ### 2025-05-20 - K Constants
 **In Class**  
- - Read the "geeksforgeeks" article. Did not really learn much.
- - Read the Wikipedia article, mainly paying attention to the pseudocode provided.
- - Began testing ways to store K values for the algorithm.
- - Created a `Test.java` file for making helper functions in `Utils.java`.
- - Created `MD5_actual.java` which returns correct output for the MD5 hash.
+ - Read the "geeksforgeeks" article. Did not really learn much. (5 mins)
+ - Read the Wikipedia article, mainly paying attention to the pseudocode provided. (5 mins)
+ - Began testing ways to store K values for the algorithm. (30 mins)
+ - Created a `Test.java` file for making helper functions in `Utils.java`. (1 min)
+ - Created `MD5_actual.java` which returns correct output for the MD5 hash. (1 min)
 
 ### 2025-05-21 - K Constants (continued)
 **In Class**  
- - Settled on storing K values as a set of strings in hexadecimal format.
- - Created a helper function that creates a 2D array of Bytes by translating the hex strings.
+ - Settled on storing K values as a set of strings in hexadecimal format. (10 mins)
+ - Created a helper function that creates a 2D array of Bytes by translating the hex strings. (30 mins)
 
 ### 2025-05-23 - K Constants Completed + Starting S Constants
 **In Class**  
- - Completed a helper function. Returns a 2D array of Bytes of size 64x4.
- - Started creation of SConstants array.
+ - Completed the helper function. Returns a 2D array of Bytes of size 64x4. (35 mins)
+ - Started creation of SConstants array. (3 mins)
 
 ### 2025-05-28 - Changes to Utils
-**In Class**
- - Reverted KConstants to String format.
+**In Class**  
+ - Updated `makefile` to run properly. (10 mins)
+ - Reverted KConstants to String format. (5 mins)
+
+**At Home**  
+ - Properly formatted code files and removed errors with `static` method and object calling in other classes. (25 mins)
+ - Integrated `BigInteger` into files for Operations 2-4. (20 mins)
+ - Updated debug print statements. Prints out ABCD init. vectors in hexadecimal. (15 mins)
+ - Created `Op_Final` for the final step after the 4 Operations. (2 mins)
+ - Began integrating Operations 2-4 into `Main`, but it did not output the right values for the final hash. Compared code with website source to find the problem, but was unsuccessful. (30 mins)
 
 
 ### 2024-01-03 - Brief description
