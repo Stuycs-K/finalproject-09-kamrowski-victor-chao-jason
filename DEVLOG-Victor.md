@@ -47,8 +47,19 @@ Finished padding 100% by turning huge binary string into 16 ints (15 mins)
 Edited utils as necessary (10 mins)
 Finished base and all operations of operation one (30 mins)
 
-### 2025-05-27: Made bitwise methods for operations two, three, four, made each operation itself
+### 2025-05-27: Made bitwise methods for operations two, three, four, made each operation itself, started putting it all together, debugging
 
 In class:
 Made bitwise operations for operations two, three, and four (20 mins)
 Made each individual operation method with each different bitwise methods (20 mins)
+
+At home:
+Started putting md5 together with all operations (30 mins)
+Switched from int to long, realized has to be unsigned so switched again to BigInteger (20 mins)
+Added other constants and small edits (10 mins)
+
+### 2025-05-28: Continued BigInteger switch, extensive testing
+
+In class:
+Continued switching from longs to BigInteger (15 mins)
+Debugging BigInteger through the first 16 loops of operation one (25 mins)
