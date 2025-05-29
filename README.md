@@ -16,7 +16,7 @@ This project is a program replicating the MD5 hashing algorithm. There will be f
 Clone the repository: `git clone git@github.com:Stuycs-K/finalproject-09-kamrowski-victor-chao-jason.git`.
 
 **Running the Program**  
-Run the main program to hash text: `make input ARGS="<input_string>"`.
+Run the main program to hash text: `make run ARGS="<input_string>"`.
 
 ### Resources/ References:
 
