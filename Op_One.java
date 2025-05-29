@@ -15,11 +15,11 @@ public class Op_One {
     public static BigInteger C = new BigInteger("FEDCBA98", 16);
     public static BigInteger D = new BigInteger("76543210", 16);
     public static BigInteger intForModAdd = new BigInteger("100000000", 16);
+    public static BigInteger mask32 = new BigInteger("FFFFFFFF",16);
 
     public static BigInteger F(BigInteger b, BigInteger c, BigInteger d) {
         // System.out.println(b.and(c));
         // long newval = (b&c)|((~b)&d);
-        BigInteger mask32 = new BigInteger("FFFFFFFF",16);
         BigInteger bAndC = b.and(c);
         BigInteger notB = b.not().and(mask32);
         BigInteger notBAndD = notB.and(d);
@@ -34,8 +34,11 @@ public class Op_One {
     }
 
     public static BigInteger modularAddition(BigInteger X, BigInteger Y, BigInteger Z) {
-        BigInteger newval = (X.add(Y)).mod(Z);
-        return newval;
+        BigInteger XPlusY = X.add(Y);
+        System.out.println("x plus y " + XPlusY);
+        BigInteger result = XPlusY.mod(Z);
+         System.out.println("full " + result);
+        return result;
     }
 
     public static void opOne(BigInteger a, BigInteger b, BigInteger c, BigInteger d, int hexStrInt, int kConstAndSInt) {
