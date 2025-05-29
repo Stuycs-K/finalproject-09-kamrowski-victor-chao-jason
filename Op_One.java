@@ -10,10 +10,10 @@ public class Op_One {
         F(B, C, D);
     }
 
-    public static BigInteger A = new BigInteger("01234567", 16);
-    public static BigInteger B = new BigInteger("89ABCDEF", 16);
-    public static BigInteger C = new BigInteger("FEDCBA98", 16);
-    public static BigInteger D = new BigInteger("76543210", 16);
+    public static BigInteger A = new BigInteger("67452301", 16);
+    public static BigInteger B = new BigInteger("efcdab89", 16);
+    public static BigInteger C = new BigInteger("98badcfe", 16);
+    public static BigInteger D = new BigInteger("10325476", 16);
     public static BigInteger intForModAdd = new BigInteger("100000000", 16);
     public static BigInteger mask32 = new BigInteger("FFFFFFFF",16);
 
@@ -35,9 +35,9 @@ public class Op_One {
 
     public static BigInteger modularAddition(BigInteger X, BigInteger Y, BigInteger Z) {
         BigInteger XPlusY = X.add(Y);
-        System.out.println("x plus y " + XPlusY);
+       // System.out.println("x plus y " + XPlusY);
         BigInteger result = XPlusY.mod(Z);
-         System.out.println("full " + result);
+        // System.out.println("full " + result);
         return result;
     }
 

@@ -4,10 +4,10 @@
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-public class Main {
+public class MD5_actual {
     public static void main(String[] args) {
         // making a message
-        String inputstring = "This is a message sent by a computer user.";
+        String inputstring = "They are deterministic";
         try {
             // encoding the message using the library function
             MessageDigest md = MessageDigest.getInstance("MD5");
