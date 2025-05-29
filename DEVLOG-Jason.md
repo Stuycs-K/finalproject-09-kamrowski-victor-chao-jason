@@ -41,6 +41,10 @@ This document must be updated daily every time you finish a work session.
  - Created `Op_Final` for the final step after the 4 Operations. (2 mins)
  - Began integrating Operations 2-4 into `Main`, but it did not output the right values for the final hash. Compared code with website source to find the problem, but was unsuccessful. (30 mins)
 
+### 2025-05-29 - Attempts to Fix Problems with Algorithm
+**In Class**  
+ - Tried to find issue within `Op_One` that was returning incorrect ABCD values, but was unsuccessful (40 mins)
+ - Created a branch for myself to test changes and potentially fix the problem. (1 min)
 
 ### 2024-01-03 - Brief description
 Expanded description including how much time was spent on task.
