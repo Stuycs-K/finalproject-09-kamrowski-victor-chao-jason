@@ -19,9 +19,18 @@ public class Op_One {
     public static BigInteger F(BigInteger b, BigInteger c, BigInteger d) {
         // System.out.println(b.and(c));
         // long newval = (b&c)|((~b)&d);
-        BigInteger newval = (b.and(c)).or(b.not().and(d));
+        BigInteger mask32 = new BigInteger("FFFFFFFF",16);
+        BigInteger bAndC = b.and(c);
+        BigInteger notB = b.not().and(mask32);
+        BigInteger notBAndD = notB.and(d);
+        BigInteger result = bAndC.or(notBAndD).and(mask32);
+
+        System.out.println("for b and c: " + bAndC);
+        System.out.println("for b not: " + notB);
+        System.out.println("for b not and d: " + notBAndD);
+                System.out.println("full " + result);
         // System.out.println(newval);
-        return newval;
+        return result;
     }
 
     public static BigInteger modularAddition(BigInteger X, BigInteger Y, BigInteger Z) {
