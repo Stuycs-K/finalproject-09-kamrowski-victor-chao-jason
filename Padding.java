@@ -10,17 +10,21 @@ public class Padding {
     public static String pad(String inputStr) {
         StringBuilder binary = new StringBuilder();
         for (int x = 0; x < inputStr.length(); x++) {
-            int forbin = Integer.valueOf(inputStr.charAt(x));
-            String str = "";
-            str = intToBinary(forbin);
-            binary.append(str);
+            int forbin = (int) inputStr.charAt(x);
+            binary.append(intToBinary(forbin));
         } // AT THIS POINT BINARY HAS THE MESSAGE IN BINARY
+
         int lengthpad = binary.length();
-        String lengthBin = intToBinary(lengthpad);
-        String end64bits = zerosPad(-1, 64, lengthBin); // FOR LAST 64 BITS
+        String lengthBin = String.format("%64s",Integer.toBinaryString(lengthpad)).replace(' ', '0'); //end with 64 bits of length
+
         binary.append("1");
-        binary = new StringBuilder(zerosPad(1, 448, binary.toString()));
-        binary.append(end64bits);
+
+        while(binary.length()%512 != 448){
+            binary.append("0");
+        }
+
+        binary.append(lengthBin);
+
         return binary.toString();
     }
 
