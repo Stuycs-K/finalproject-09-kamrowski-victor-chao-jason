@@ -25,6 +25,13 @@ public class Op_One {
         return sum.and(mask32);
     }
 
+    public static BigInteger leftRotate(BigInteger val, int shift){
+        shift %= 32;
+        BigInteger left = value.shiftLeft(shift);
+        BigInteger right = value.shiftRight(32-shift);
+        return left.or(right).and(mask32);
+    }
+
     public static void opOne(BigInteger a, BigInteger b, BigInteger c, BigInteger d, int hexStrInt, int kConstAndSInt) {
         BigInteger F1 = F(b, c, d);
         System.out.println(F1);
