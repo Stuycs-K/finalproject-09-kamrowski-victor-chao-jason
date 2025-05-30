@@ -79,3 +79,10 @@ At home:
 - Simplified operation one and deleted many unnecessary lines (15 mins)
 - Changed modular addition to take as many inputs as needed (10 mins)
 - Created an actual shift method instead of just including in various operations. Used BigInteger methods instead of doing it through annoying bit/binary string manipulations (15 mins)
+
+### 2025-05-30: Implemented little endian hex strings (BigIntegers) into main, works for first operation now
+
+In class:
+- Cleaned the main a decent amount, and instead of looping in the main, used bitScedule method which did it itself in little endian (20 mins)
+- Started testing for known test cases and checked all operations for the first operation, seems to work for now (10 mins)
+- Added all devlog updates (10 mins)
