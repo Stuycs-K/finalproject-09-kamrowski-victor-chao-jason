@@ -29,44 +29,26 @@ public class Padding {
     }
 
     public static String intToBinary(int int1) {
-        String str = "";
-        int forbin = int1;
-        for (int bin = 128; bin >= 1; bin = bin / 2) {
-            if (forbin / bin > 0) {
-                str = str + "1";
-                forbin = forbin - bin;
-            } else {
-                str = str + "0";
-            }
-        }
-        return str;
+        String binary = Integer.toBinaryString(int1);
+        return String.format("%8s",binary).replace(' ','0');
     }
 
     public static BigInteger binaryStringtoInt(String str) {
-        BigInteger bigint = new BigInteger(str, 2);
-        return bigint;
+        return new BigInteger(str,2);
     }
 
-    public static String zerosPad(int location, int endlength, String initStr) {
-        if (location == 0) {
-            System.out.println("location has to be pos. or neg. not zero");
-            return "";
-        } // location cannot equal 0
-        StringBuilder addzeros = new StringBuilder(); // location negative -> pad before string. location positive ->
-                                                      // pad
-                                                      // after string
-        if (location < 0) {
-            for (int x = 0; x < endlength - initStr.length(); x++) {
-                addzeros.append("0");
-            }
-            addzeros.append(initStr);
-        } else {
-            addzeros.append(initStr);
-            for (int x = 0; x < endlength - initStr.length(); x++) {
-                addzeros.append("0");
-            }
+    public static void bitSchedule(String str){
+        for(int x = 0;x<16;x++){
+            String word = str.substring(x*32,(x+1)*32);
+
+            String b0 = word.substring(24,32);
+            String b1 = word.substring(16,24);
+            String b2 = word.substring(8,16);
+            String b3 = word.substring(0,8);
+            String littleendian = b0+b1+b2+b3;
+
+            hexStrings[x] = binaryStringtoInt(littleendian);
         }
-        return addzeros.toString();
     }
 
 }
