@@ -34,26 +34,21 @@ public class Op_One {
 
     public static void opOne(BigInteger a, BigInteger b, BigInteger c, BigInteger d, int hexStrInt, int kConstAndSInt) {
         BigInteger F1 = F(b, c, d);
-        System.out.println(F1);
-        BigInteger MA1 = modularAddition(a, F1, mod32);
-        System.out.println(MA1);
-        BigInteger MA2 = modularAddition(Padding.hexStrings[hexStrInt], 
-                                         MA1, mod32);
-        System.out.println(MA2);
-        BigInteger MA3 = modularAddition(new BigInteger(Utils.KConstants[kConstAndSInt - 1], 16), 
-                                         MA2, mod32);
-        System.out.println(MA3);
-        
-        // left bit shift
-        String binStr = MA3.toString(2);
-        System.out.println(binStr);
-        binStr = Padding.zerosPad(-1, 32, binStr);
-        String newBin = "" + binStr.substring(Utils.SValues[kConstAndSInt - 1]) + binStr.substring(0, Utils.SValues[kConstAndSInt - 1]);
-        BigInteger afterShift = Padding.binaryStringtoInt(newBin);
-        BigInteger MA4 = modularAddition(b, afterShift, mod32);
+        BigInteger MofG = Padding.hexStrings[hexStrInt];
+        BigInteger KofI = new BigInteger(Utils.KConstants[kConstAndSInt-1],16);
+        int SofI = Utils.SValues[kConstAndSInt-1];
 
+        //adding all tgt
+        BigInteger temp = modularAddition(a,F1,MofG,KofI);
+
+        //rotation
+        BigInteger rotation = leftRotate(temp, SofI);
+
+        //new b
+        BigInteger Bnew = b.add(rotated).and(mask32);
+        
         A = d;
-        B = MA4;
+        B = Bnew;
         C = b;
         D = c;
     }
