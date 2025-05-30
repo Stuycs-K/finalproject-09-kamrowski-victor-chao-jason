@@ -23,3 +23,4 @@ Run the main program to hash text: `make run ARGS="<input_string>"`.
  - [in-depth](https://www.comparitech.com/blog/information-security/md5-algorithm-with-examples/)
  - [geeksforgeeks](https://www.geeksforgeeks.org/what-is-the-md5-algorithm/)
  - [wikipedia](https://en.wikipedia.org/wiki/MD5#Algorithm)
+ - [MD5 Documentation](https://www.ietf.org/rfc/rfc1321.txt)
