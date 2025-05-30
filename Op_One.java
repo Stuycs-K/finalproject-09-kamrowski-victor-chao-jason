@@ -17,12 +17,12 @@ public class Op_One {
         return bAndC.or(notBAndD).and(mask32);
     }
 
-    public static BigInteger modularAddition(BigInteger X, BigInteger Y, BigInteger Z) {
-        BigInteger XPlusY = X.add(Y);
-       // System.out.println("x plus y " + XPlusY);
-        BigInteger result = XPlusY.mod(Z);
-        // System.out.println("full " + result);
-        return result;
+    public static BigInteger modularAddition(BigInteger... values) {
+        BigInteger sum = BigInteger.ZERO;
+        for(BigInteger value : values){
+            sum = sum.add(value);
+        }
+        return sum.and(mask32);
     }
 
     public static void opOne(BigInteger a, BigInteger b, BigInteger c, BigInteger d, int hexStrInt, int kConstAndSInt) {
