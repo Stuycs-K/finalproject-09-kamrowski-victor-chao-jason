@@ -9,20 +9,23 @@ public class Main {
         for (int x = 0; x < args.length; x++) {
             Padding.input = Padding.input + args[x] + " ";
         }
-        Padding.input = Padding.input.substring(0, Padding.input.length() - 1);
-        // System.out.println(Padding.input);
+
+        Padding.input = Padding.input.trim();
         String paddedStr = Padding.pad(Padding.input);
-        // System.out.println(paddedStr);
-        for (int x = 0; x < 16; x++) {
-            Padding.hexStrings[x] = Padding.binaryStringtoInt(paddedStr.substring(32 * x, 32 * (x + 1)));
-            // System.out.println(Padding.hexStrings[x]);
-        }
+        Padding.bitSchedule(paddedStr);
+
+        Op_One.A = new BigInteger("67452301",16);
+        Op_One.B = new BigInteger("efcdab89",16);
+        Op_One.C = new BigInteger("98badcfe",16);
+        Op_One.D = new BigInteger("10325476",16);
+
+
         for (int x = 0; x < 16; x++) {
             System.out.println("=== Round " + (x + 1) + " ===");
             Op_One.opOne(Op_One.A, Op_One.B, Op_One.C, Op_One.D, x, x + 1);
-            System.out.println("A: " + Op_One.A.toString(16) + " " + 
-                               "B: " + Op_One.B.toString(16) + " " + 
-                               "C: " + Op_One.C.toString(16) + " " + 
+            System.out.println("A: " + Op_One.A.toString(16) + " " +
+                               "B: " + Op_One.B.toString(16) + " " +
+                               "C: " + Op_One.C.toString(16) + " " +
                                "D: " + Op_One.D.toString(16) + "\n");
         }
         System.out.println(Op_One.A.toString(16) + " " + Op_One.B.toString(16) + " " + Op_One.C.toString(16) + " " + Op_One.D.toString(16));
