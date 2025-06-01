@@ -46,5 +46,13 @@ This document must be updated daily every time you finish a work session.
  - Tried to find issue within `Op_One` that was returning incorrect ABCD values, but was unsuccessful (40 mins)
  - Created a branch for myself to test changes and potentially fix the problem. (1 min)
 
+### 2025-06-01 - Fixed Errors, Attempted to Fix Algorithm Miscalculations, and Added Final Step
+ - Fixed errors with incorrect variable names. (15 mins)
+ - Noticed that the algorithm is correct up until a certain point. (90 mins)
+    - Closer inspection revealed that something goes wrong with the calculation for the new B value in the 14th operation (starting from i=0) of the first round.
+    - The rotation value is off by 0x01700000.
+    - Was unable to find the source of this issue. Narrowed it down to either an incorrect 32-bit string or something wrong with the left rotation calculation. Will look into it more tomorrow in class.
+ - Added the final step after the four rounds of operations. (10 mins)
+
 ### 2024-01-03 - Brief description
 Expanded description including how much time was spent on task.

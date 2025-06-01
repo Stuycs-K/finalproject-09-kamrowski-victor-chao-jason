@@ -15,11 +15,12 @@ public class Padding {
         } // AT THIS POINT BINARY HAS THE MESSAGE IN BINARY
 
         int lengthpad = binary.length();
-        String lengthBin = String.format("%64s",Integer.toBinaryString(lengthpad)).replace(' ', '0'); //end with 64 bits of length
+        String lengthBin = String.format("%64s", Integer.toBinaryString(lengthpad)).replace(' ', '0'); // end with 64
+                                                                                                       // bits of length
 
         binary.append("1");
 
-        while(binary.length()%512 != 448){
+        while (binary.length() % 512 != 448) {
             binary.append("0");
         }
 
@@ -30,22 +31,22 @@ public class Padding {
 
     public static String intToBinary(int int1) {
         String binary = Integer.toBinaryString(int1);
-        return String.format("%8s",binary).replace(' ','0');
+        return String.format("%8s", binary).replace(' ', '0');
     }
 
     public static BigInteger binaryStringtoInt(String str) {
-        return new BigInteger(str,2);
+        return new BigInteger(str, 2);
     }
 
-    public static void bitSchedule(String str){
-        for(int x = 0;x<16;x++){
-            String word = str.substring(x*32,(x+1)*32);
+    public static void bitSchedule(String str) {
+        for (int x = 0; x < 16; x++) {
+            String word = str.substring(x * 32, (x + 1) * 32);
 
-            String b0 = word.substring(24,32);
-            String b1 = word.substring(16,24);
-            String b2 = word.substring(8,16);
-            String b3 = word.substring(0,8);
-            String littleendian = b0+b1+b2+b3;
+            String b0 = word.substring(24, 32);
+            String b1 = word.substring(16, 24);
+            String b2 = word.substring(8, 16);
+            String b3 = word.substring(0, 8);
+            String littleendian = b0 + b1 + b2 + b3;
 
             hexStrings[x] = binaryStringtoInt(littleendian);
         }

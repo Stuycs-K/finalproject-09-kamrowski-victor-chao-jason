@@ -9,17 +9,17 @@ public class Op_Two {
 
     public static void opTwo(BigInteger a, BigInteger b, BigInteger c, BigInteger d, int hexStrInt, int kConstAndSInt) {
         BigInteger G1 = G(b, c, d);
-        BigInteger MA1 = Op_One.modularAddition(a, G1, Op_One.intForModAdd);
-        BigInteger MA2 = Op_One.modularAddition(Padding.hexStrings[hexStrInt], 
-                                                MA1, Op_One.intForModAdd);
-        BigInteger MA3 = Op_One.modularAddition(new BigInteger(Utils.KConstants[kConstAndSInt - 1], 16), 
-                                                MA2, Op_One.intForModAdd);
+        BigInteger MA1 = Op_One.modularAddition(a, G1, Op_One.mod32);
+        BigInteger MA2 = Op_One.modularAddition(Padding.hexStrings[(hexStrInt * 5 + 1) % 16],
+                                                MA1, Op_One.mod32);
+        BigInteger MA3 = Op_One.modularAddition(new BigInteger(Utils.KConstants[kConstAndSInt - 1], 16),
+                                                MA2, Op_One.mod32);
         // left bit shift
         String binStr = MA3.toString(2);
-        binStr = Padding.zerosPad(-1, 32, binStr);
+        binStr = Padding.pad(binStr);
         String newBin = "" + binStr.substring(Utils.SValues[kConstAndSInt - 1]) + binStr.substring(0, Utils.SValues[kConstAndSInt - 1]);
         BigInteger afterShift = Padding.binaryStringtoInt(newBin);
-        BigInteger MA4 = Op_One.modularAddition(b, afterShift, Op_One.intForModAdd);
+        BigInteger MA4 = Op_One.modularAddition(b, afterShift, Op_One.mod32);
 
         Op_One.A = d;
         Op_One.B = MA4;
