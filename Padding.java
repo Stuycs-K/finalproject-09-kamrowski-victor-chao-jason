@@ -14,17 +14,21 @@ public class Padding {
             binary.append(intToBinary(forbin));
         } // AT THIS POINT BINARY HAS THE MESSAGE IN BINARY
 
-        int lengthpad = binary.length();
-        String lengthBin = String.format("%64s", Integer.toBinaryString(lengthpad)).replace(' ', '0'); // end with 64
-                                                                                                       // bits of length
+        long lengthpad = binary.length();
 
         binary.append("1");
 
         while (binary.length() % 512 != 448) {
             binary.append("0");
         }
-
-        binary.append(lengthBin);
+        String lengthBin = String.format("%64s", Long.toBinaryString(lengthpad)).replace(' ', '0'); // end with 64
+                                                                                                       // bits of length
+        StringBuilder lengthstring = new StringBuilder();
+        for(int x = 0;x<8;x++){
+            String bytestr = lengthBin.substring(56-8*x,64-8*x);
+            lengthstring.append(bytestr);
+        }
+        binary.append(lengthstring.toString());
 
         return binary.toString();
     }

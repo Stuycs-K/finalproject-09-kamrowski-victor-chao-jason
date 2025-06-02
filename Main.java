@@ -23,13 +23,13 @@ public class Main {
         for (int x = 0; x < 16; x++) {
             Op_One.opOne(Op_One.A, Op_One.B, Op_One.C, Op_One.D, x, x + 1);
 
-            if (x == 14 || x == 15) {
+            //if (x == 14 || x == 15) {
                 System.out.println("----- i=" + x + " -----");
                 System.out.println(Op_One.A.toString(16) + " " +
                                     Op_One.B.toString(16) + " " +
                                     Op_One.C.toString(16) + " " +
                                     Op_One.D.toString(16) + "\n");
-            }
+           // }
         }
         System.out.println(Op_One.A.toString(16) + " " + Op_One.B.toString(16) + " " + Op_One.C.toString(16) + " " + Op_One.D.toString(16));
 
