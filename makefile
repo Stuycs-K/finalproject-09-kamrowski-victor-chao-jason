@@ -1,4 +1,4 @@
-run: compile
+run:
 	@java Main $(ARGS)
 
 compile:

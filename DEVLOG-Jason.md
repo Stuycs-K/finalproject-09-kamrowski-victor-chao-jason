@@ -58,6 +58,7 @@ This document must be updated daily every time you finish a work session.
 ### 2025-06-02 - Fixing Up Code
 **In Class**
  - Removed debug print statements and unnecessary code. (10 mins)
+ - Added another condition for arguments. Input string must be at most 55 characters for reasons detailed in our presentation. (5 mins)
  - Planned to write out the presentation markdown file tonight. (3 mins)
 **At Home**
  - Formatted all files. (5 mins)

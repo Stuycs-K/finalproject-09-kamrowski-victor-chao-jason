@@ -2,8 +2,12 @@ import java.math.BigInteger;
 
 public class Main {
     public static void main(String[] args) {
-        if (args.length < 1) {
+        if (args.length != 1) {
             System.out.println("no args provided. Use make input ARGS='<input>'");
+            return;
+        }
+        if (args[0].length() > 55) {
+            System.out.println("String input is too long. Must be at most 55 characters.");
             return;
         }
         for (int x = 0; x < args.length; x++) {

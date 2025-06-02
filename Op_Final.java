@@ -27,10 +27,10 @@ public class Op_Final {
         String hexC = bigIntToHexLittleEndian(Op_One.CC);
         String hexD = bigIntToHexLittleEndian(Op_One.DD);
 
-        System.out.println("Final A: " + hexA);
-        System.out.println("Final B: " + hexB);
-        System.out.println("Final C: " + hexC);
-        System.out.println("Final D: " + hexD);
+        // System.out.println("Final A: " + hexA);
+        // System.out.println("Final B: " + hexB);
+        // System.out.println("Final C: " + hexC);
+        // System.out.println("Final D: " + hexD);
         System.out.println("Final Hash: " + hexA + hexB + hexC + hexD);
     }
 }
