@@ -55,5 +55,12 @@ This document must be updated daily every time you finish a work session.
     - Was unable to find the source of this issue. Narrowed it down to either an incorrect 32-bit string or something wrong with the left rotation calculation. Will look into it more tomorrow in class.
  - Added the final step after the four rounds of operations. (10 mins)
 
+### 2025-06-02 - Fixing Up Code
+**In Class**
+ - Removed debug print statements and unnecessary code. (10 mins)
+ - Planned to write out the presentation markdown file tonight. (3 mins)
+**At Home**
+ - Formatted all files. (5 mins)
+
 ### 2024-01-03 - Brief description
 Expanded description including how much time was spent on task.

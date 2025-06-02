@@ -56,19 +56,9 @@ public class Op_One {
         // new b
         BigInteger Bnew = b.add(rotation).and(mask32);
 
-     /*    if (hexStrInt == 14) {
-            // System.out.println(Utils.KConstants[kConstAndSInt - 1]);
-            System.out.println("temp: " + temp.toString(16));
-            System.out.println("rotation: " + rotation.toString(16));
-            System.out.println("actual rotation value needed: FBF51B18");
-            System.out.println(b.toString(16));
-            System.out.println(Bnew.toString(16));
-        }*/
-
         A = d;
         B = Bnew;
         C = b;
         D = c;
     }
 }
-
