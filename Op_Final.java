@@ -7,16 +7,14 @@ public class Op_Final {
         byte[] bytes = new byte[4]; //for final hex string
         bytes[0] = (byte)((word>>>24)&0xFF);
         bytes[1] = (byte)((word>>>16)&0xFF);
-         bytes[2] = (byte)((word>>>8)&0xFF);
-          bytes[3] = (byte)((word)&0xFF);
-          StringBuilder sb = new StringBuilder(8);
-          for(int y = 3;y>=0;y--){
+        bytes[2] = (byte)((word>>>8)&0xFF);
+        bytes[3] = (byte)((word)&0xFF);
+        StringBuilder sb = new StringBuilder(8);
+        for(int y = 3;y>=0;y--){
             sb.append(String.format("%02x",bytes[y]&0xFF));
-          }
-          return sb.toString();
-
+        }
+        return sb.toString();
     }
-
 
     public static void opFinal() {
         Op_One.AA = Op_One.AA.add(Op_One.A).and(Op_One.mask32);
@@ -28,7 +26,7 @@ public class Op_Final {
         String hexB = bigIntToHexLittleEndian(Op_One.BB);
         String hexC = bigIntToHexLittleEndian(Op_One.CC);
         String hexD = bigIntToHexLittleEndian(Op_One.DD);
-        
+
         System.out.println("Final A: " + hexA);
         System.out.println("Final B: " + hexB);
         System.out.println("Final C: " + hexC);

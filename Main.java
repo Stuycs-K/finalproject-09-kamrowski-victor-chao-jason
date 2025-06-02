@@ -19,44 +19,10 @@ public class Main {
         Op_One.C = new BigInteger("98badcfe",16);
         Op_One.D = new BigInteger("10325476",16);
 
-
-        for (int x = 0; x < 16; x++) {
-            Op_One.opOne(x);
-
-            //if (x == 14 || x == 15) {
-              //  System.out.println("----- i=" + x + " -----");
-               // System.out.println(Op_One.A.toString(16) + " " +
-                //                    Op_One.B.toString(16) + " " +
-                //                    Op_One.C.toString(16) + " " +
-                  //                  Op_One.D.toString(16) + "\n");
-           // }
-        }
-       // System.out.println(Op_One.A.toString(16) + " " + Op_One.B.toString(16) + " " + Op_One.C.toString(16) + " " + Op_One.D.toString(16));
-
-         for (int x = 16; x < 32; x++) {
-           //  System.out.println("----- i=" + x + " -----");
-             Op_Two.opTwo(x);
-             //System.out.println("A: " + Op_One.A.toString(16) + " " +
-               //                 "B: " + Op_One.B.toString(16) + " " +
-                 //               "C: " + Op_One.C.toString(16) + " " +
-                   //             "D: " + Op_One.D.toString(16) + "\n");
-         }
-         for (int x = 32; x < 48; x++) {
-         System.out.println("----- i=" + x + " -----");
-             Op_Three.opThree(x);
-         System.out.println("A: " + Op_One.A.toString(16) + " " +
-                                "B: " + Op_One.B.toString(16) + " " +
-                                "C: " + Op_One.C.toString(16) + " " +
-                                "D: " + Op_One.D.toString(16) + "\n");
-         }
-         for (int x = 48; x < 64; x++) {
-            System.out.println("----- i=" + x + " -----");
-             Op_Four.opFour(x);
-             System.out.println("A: " + Op_One.A.toString(16) + " " +
-                                "B: " + Op_One.B.toString(16) + " " +
-                                "C: " + Op_One.C.toString(16) + " " +
-                                "D: " + Op_One.D.toString(16) + "\n");
-         }
+        for (int x = 0; x < 16; x++) { Op_One.opOne(x); }
+        for (int x = 16; x < 32; x++) { Op_Two.opTwo(x); }
+        for (int x = 32; x < 48; x++) { Op_Three.opThree(x); }
+        for (int x = 48; x < 64; x++) { Op_Four.opFour(x); }
         Op_Final.opFinal();
     }
 }

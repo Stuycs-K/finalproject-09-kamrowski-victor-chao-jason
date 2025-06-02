@@ -66,23 +66,6 @@ public class Utils {
         "EB86D391",
     };
 
-    // public Byte[][] KToBytesArray() {
-    // Byte[][] byteArray = new Byte[this.KConstants.length][4];
-    // for (int i = 0; i < this.KConstants.length; i++) {
-    // String constant = this.KConstants[i];
-    // for (int j = 0; j < 4; j++) {
-    // // System.out.println(constant.substring(j * 2, j * 2 + 2));
-    // int val = Integer.parseInt(constant.substring(j * 2, j * 2 + 2), 16);
-    // Byte byteVal = Byte.valueOf((byte) val);
-    // System.out.println(val + " = " + byteVal.intValue() + " = " +
-    // String.format("%8s", Integer.toBinaryString(byteVal & 0xFF)).replace(' ',
-    // '0'));
-    // byteArray[i][j] = byteVal;
-    // }
-    // }
-    // return byteArray;
-    // }
-
     public static int[] SValues = {
         // ROUND ONE
         7, 12, 17, 22, // S1, S2, S3, S4
@@ -108,5 +91,4 @@ public class Utils {
         6, 10, 15, 21,
         6, 10, 15, 21
     };
-
 }
