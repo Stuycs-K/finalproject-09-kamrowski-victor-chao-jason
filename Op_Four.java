@@ -2,26 +2,34 @@ import java.math.BigInteger;
 
 public class Op_Four {
     public static BigInteger I(BigInteger b, BigInteger c, BigInteger d) {
-        BigInteger newval = (c.xor(b.or(d.not())));
-        return newval;
+        BigInteger notD = d.not().and(Op_One.mask32);
+        BigInteger bOrNotD = b.or(notD);
+        return c.xor(bOrNotD).and(Op_One.mask32);
     }
 
-    public static void opFour(BigInteger a, BigInteger b, BigInteger c, BigInteger d, int hexStrInt, int kConstAndSInt) {
+    public static void opFour(int x) {
+        BigInteger a = Op_One.A;
+        BigInteger b = Op_One.B;
+        BigInteger c = Op_One.C;
+        BigInteger d = Op_One.D;
         BigInteger I1 = I(b, c, d);
-        BigInteger MA1 = Op_One.modularAddition(a, I1, Op_One.mod32);
-        BigInteger MA2 = Op_One.modularAddition(Padding.hexStrings[(hexStrInt * 7) % 16], 
-                                                MA1, Op_One.mod32);
-        BigInteger MA3 = Op_One.modularAddition(new BigInteger(Utils.KConstants[kConstAndSInt - 1], 16), 
-                                                MA2, Op_One.mod32);
-        // left bit shift
-        String binStr = MA3.toString(2);
-        binStr = Padding.pad(binStr);
-        String newBin = "" + binStr.substring(Utils.SValues[kConstAndSInt - 1]) + binStr.substring(0, Utils.SValues[kConstAndSInt - 1]);
-        BigInteger afterShift = Padding.binaryStringtoInt(newBin);
-        BigInteger MA4 = Op_One.modularAddition(b, afterShift, Op_One.mod32);
+        int gindex = (3*x+5)%16;
+        
+        BigInteger MofG = Padding.hexStrings[gindex];
+        BigInteger KofI = new BigInteger(Utils.KConstants[x],16);
+        int SofI = Utils.SValues[x];
+
+        // adding all tgt
+        BigInteger temp = Op_One.modularAddition(a, I1, MofG, KofI);
+
+        // rotation
+        BigInteger rotation = Op_One.leftRotate(temp, SofI);
+
+        // new b
+        BigInteger Bnew = b.add(rotation).and(Op_One.mask32);
         
         Op_One.A = d;
-        Op_One.B = MA4;
+        Op_One.B = Bnew;
         Op_One.C = b;
         Op_One.D = c;
     }

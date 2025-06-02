@@ -37,11 +37,15 @@ public class Op_One {
         return left.or(right).and(mask32);
     }
 
-    public static void opOne(BigInteger a, BigInteger b, BigInteger c, BigInteger d, int hexStrInt, int kConstAndSInt) {
+    public static void opOne(int x) {
+        BigInteger a = Op_One.A;
+        BigInteger b = Op_One.B;
+        BigInteger c = Op_One.C;
+        BigInteger d = Op_One.D;
         BigInteger F1 = F(b, c, d);
-        BigInteger MofG = Padding.hexStrings[hexStrInt];
-        BigInteger KofI = new BigInteger(Utils.KConstants[kConstAndSInt - 1], 16);
-        int SofI = Utils.SValues[kConstAndSInt - 1];
+        BigInteger MofG = Padding.hexStrings[x];
+        BigInteger KofI = new BigInteger(Utils.KConstants[x], 16);
+        int SofI = Utils.SValues[x];
 
         // adding all tgt
         BigInteger temp = modularAddition(a, F1, MofG, KofI);
@@ -67,9 +71,4 @@ public class Op_One {
         D = c;
     }
 }
-
-/*
- * 
- * 
- */
 

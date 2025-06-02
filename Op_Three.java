@@ -5,13 +5,17 @@ public class Op_Three {
         return b.xor(c).xor(d).and(Op_One.mask32);
     }
 
-    public static void opThree(BigInteger a, BigInteger b, BigInteger c, BigInteger d, int hexStrInt, int kConstAndSInt) {
+    public static void opThree(int x) {
+        BigInteger a = Op_One.A;
+        BigInteger b = Op_One.B;
+        BigInteger c = Op_One.C;
+        BigInteger d = Op_One.D;
         BigInteger H1 = H(b, c, d);
-        int gindex = (3*hexStrInt+5)%16;
+        int gindex = (3*x+5)%16;
         
         BigInteger MofG = Padding.hexStrings[gindex];
-        BigInteger KofI = new BigInteger(Utils.KConstants[kConstAndSInt-1],16);
-        int SofI = Utils.SValues[kConstAndSInt - 1];
+        BigInteger KofI = new BigInteger(Utils.KConstants[x],16);
+        int SofI = Utils.SValues[x];
 
         // adding all tgt
         BigInteger temp = Op_One.modularAddition(a, H1, MofG, KofI);
