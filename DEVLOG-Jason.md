@@ -46,8 +46,9 @@ This document must be updated daily every time you finish a work session.
  - Tried to find issue within `Op_One` that was returning incorrect ABCD values, but was unsuccessful (40 mins)
  - Created a branch for myself to test changes and potentially fix the problem. (1 min)
 
-### 2025-06-01 - Fixed Errors, Attempted to Fix Algorithm Miscalculations, and Added Final Step
+### 2025-06-01 - Fixed Errors, Updated Algorithm, Attempted to Fix Algorithm Miscalculations, and Added Final Step
  - Fixed errors with incorrect variable names. (15 mins)
+ - Updated order in which 32-bit substrings are used in the algorithm for rounds 2-4. (10 mins)
  - Noticed that the algorithm is correct up until a certain point. (90 mins)
     - Closer inspection revealed that something goes wrong with the calculation for the new B value in the 14th operation (starting from i=0) of the first round.
     - The rotation value is off by 0x01700000.

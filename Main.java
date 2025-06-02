@@ -40,13 +40,13 @@ public class Main {
                                 "B: " + Op_One.B.toString(16) + " " +
                                 "C: " + Op_One.C.toString(16) + " " +
                                 "D: " + Op_One.D.toString(16) + "\n");
-         }
-        // for (int x = 32; x < 48; x++) {
-        //     Op_Three.opThree(Op_One.A, Op_One.B, Op_One.C, Op_One.D, x - 32, x + 1);
-        // }
-        // for (int x = 48; x < 64; x++) {
-        //     Op_Four.opFour(Op_One.A, Op_One.B, Op_One.C, Op_One.D, x - 48, x + 1);
-        // }
-        // Op_Final.opFinal(Op_One.A, Op_One.B, Op_One.C, Op_One.D);
+        }
+        for (int x = 32; x < 48; x++) {
+            Op_Three.opThree(Op_One.A, Op_One.B, Op_One.C, Op_One.D, x - 32, x + 1);
+        }
+        for (int x = 48; x < 64; x++) {
+            Op_Four.opFour(Op_One.A, Op_One.B, Op_One.C, Op_One.D, x - 48, x + 1);
+        }
+        Op_Final.opFinal(Op_One.A, Op_One.B, Op_One.C, Op_One.D);
     }
 }
