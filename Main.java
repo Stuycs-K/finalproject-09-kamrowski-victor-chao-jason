@@ -50,7 +50,12 @@ public class Main {
                                 "D: " + Op_One.D.toString(16) + "\n");
          }
          for (int x = 48; x < 64; x++) {
+            System.out.println("----- i=" + x + " -----");
              Op_Four.opFour(x);
+             System.out.println("A: " + Op_One.A.toString(16) + " " +
+                                "B: " + Op_One.B.toString(16) + " " +
+                                "C: " + Op_One.C.toString(16) + " " +
+                                "D: " + Op_One.D.toString(16) + "\n");
          }
         Op_Final.opFinal();
     }
