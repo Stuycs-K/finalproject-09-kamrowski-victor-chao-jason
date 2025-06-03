@@ -22,10 +22,10 @@ public class Padding {
             binary.append("0");
         }
         String lengthBin = String.format("%64s", Long.toBinaryString(lengthpad)).replace(' ', '0'); // end with 64
-                                                                                                       // bits of length
+                                                                                                    // bits of length
         StringBuilder lengthstring = new StringBuilder();
-        for(int x = 0;x<8;x++){
-            String bytestr = lengthBin.substring(56-8*x,64-8*x);
+        for (int x = 0; x < 8; x++) {
+            String bytestr = lengthBin.substring(56 - 8 * x, 64 - 8 * x);
             lengthstring.append(bytestr);
         }
         binary.append(lengthstring.toString());

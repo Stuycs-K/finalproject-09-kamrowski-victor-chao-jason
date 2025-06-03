@@ -11,10 +11,10 @@ public class Op_Three {
         BigInteger c = Op_One.C;
         BigInteger d = Op_One.D;
         BigInteger H1 = H(b, c, d);
-        int gindex = (3*x+5)%16;
-        
+        int gindex = (3 * x + 5) % 16;
+
         BigInteger MofG = Padding.hexStrings[gindex];
-        BigInteger KofI = new BigInteger(Utils.KConstants[x],16);
+        BigInteger KofI = new BigInteger(Utils.KConstants[x], 16);
         int SofI = Utils.SValues[x];
 
         // adding all tgt

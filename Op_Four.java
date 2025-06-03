@@ -13,10 +13,10 @@ public class Op_Four {
         BigInteger c = Op_One.C;
         BigInteger d = Op_One.D;
         BigInteger I1 = I(b, c, d);
-        int gindex = (7*x)%16;
-        
+        int gindex = (7 * x) % 16;
+
         BigInteger MofG = Padding.hexStrings[gindex];
-        BigInteger KofI = new BigInteger(Utils.KConstants[x],16);
+        BigInteger KofI = new BigInteger(Utils.KConstants[x], 16);
         int SofI = Utils.SValues[x];
 
         // adding all tgt
@@ -27,7 +27,7 @@ public class Op_Four {
 
         // new b
         BigInteger Bnew = b.add(rotation).and(Op_One.mask32);
-        
+
         Op_One.A = d;
         Op_One.B = Bnew;
         Op_One.C = b;

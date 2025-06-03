@@ -2,16 +2,16 @@ import java.math.BigInteger;
 
 public class Op_Final {
 
-    public static String bigIntToHexLittleEndian(BigInteger x){
-        int word = x.intValue(); //basically mod 32 bc only gets 4 bytes
-        byte[] bytes = new byte[4]; //for final hex string
-        bytes[0] = (byte)((word>>>24)&0xFF);
-        bytes[1] = (byte)((word>>>16)&0xFF);
-        bytes[2] = (byte)((word>>>8)&0xFF);
-        bytes[3] = (byte)((word)&0xFF);
+    public static String bigIntToHexLittleEndian(BigInteger x) {
+        int word = x.intValue(); // basically mod 32 bc only gets 4 bytes
+        byte[] bytes = new byte[4]; // for final hex string
+        bytes[0] = (byte) ((word >>> 24) & 0xFF);
+        bytes[1] = (byte) ((word >>> 16) & 0xFF);
+        bytes[2] = (byte) ((word >>> 8) & 0xFF);
+        bytes[3] = (byte) ((word) & 0xFF);
         StringBuilder sb = new StringBuilder(8);
-        for(int y = 3;y>=0;y--){
-            sb.append(String.format("%02x",bytes[y]&0xFF));
+        for (int y = 3; y >= 0; y--) {
+            sb.append(String.format("%02x", bytes[y] & 0xFF));
         }
         return sb.toString();
     }
@@ -31,6 +31,6 @@ public class Op_Final {
         // System.out.println("Final B: " + hexB);
         // System.out.println("Final C: " + hexC);
         // System.out.println("Final D: " + hexD);
-        System.out.println("Final Hash: " + hexA + hexB + hexC + hexD);
+        System.out.println(hexA + hexB + hexC + hexD);
     }
 }

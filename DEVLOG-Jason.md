@@ -55,13 +55,12 @@ This document must be updated daily every time you finish a work session.
     - Was unable to find the source of this issue. Narrowed it down to either an incorrect 32-bit string or something wrong with the left rotation calculation. Will look into it more tomorrow in class.
  - Added the final step after the four rounds of operations. (10 mins)
 
-### 2025-06-02 - Fixing Up Code
+### 2025-06-02 - Fixing Up Code and Comparing Runtimes
 **In Class**
  - Removed debug print statements and unnecessary code. (10 mins)
  - Added another condition for arguments. Input string must be at most 55 characters for reasons detailed in our presentation. (5 mins)
- - Planned to write out the presentation markdown file tonight. (3 mins)
+ - Created Bash scripts to run the terminal's `md5sum` and our md5 algorithm on 100 lines from the rockyou list. (25 mins)
 **At Home**
  - Formatted all files. (5 mins)
-
-### 2024-01-03 - Brief description
-Expanded description including how much time was spent on task.
+ - Updated README to include `make compile` when running the program. (1 min)
+ - Ran the Bash scripts and took note of time differences. Did 5 trials. Stored data in `runtimes.txt`. (20 mins)

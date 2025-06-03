@@ -18,15 +18,23 @@ public class Main {
         String paddedStr = Padding.pad(Padding.input);
         Padding.bitSchedule(paddedStr);
 
-        Op_One.A = new BigInteger("67452301",16);
-        Op_One.B = new BigInteger("efcdab89",16);
-        Op_One.C = new BigInteger("98badcfe",16);
-        Op_One.D = new BigInteger("10325476",16);
+        Op_One.A = new BigInteger("67452301", 16);
+        Op_One.B = new BigInteger("efcdab89", 16);
+        Op_One.C = new BigInteger("98badcfe", 16);
+        Op_One.D = new BigInteger("10325476", 16);
 
-        for (int x = 0; x < 16; x++) { Op_One.opOne(x); }
-        for (int x = 16; x < 32; x++) { Op_Two.opTwo(x); }
-        for (int x = 32; x < 48; x++) { Op_Three.opThree(x); }
-        for (int x = 48; x < 64; x++) { Op_Four.opFour(x); }
+        for (int x = 0; x < 16; x++) {
+            Op_One.opOne(x);
+        }
+        for (int x = 16; x < 32; x++) {
+            Op_Two.opTwo(x);
+        }
+        for (int x = 32; x < 48; x++) {
+            Op_Three.opThree(x);
+        }
+        for (int x = 48; x < 64; x++) {
+            Op_Four.opFour(x);
+        }
         Op_Final.opFinal();
     }
 }

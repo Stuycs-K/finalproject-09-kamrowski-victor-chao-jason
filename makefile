@@ -3,6 +3,7 @@ run:
 
 compile:
 	@javac Main.java
+	@javac Padding.java
 	@javac Op_One.java
 	@javac Op_Two.java
 	@javac Op_Three.java

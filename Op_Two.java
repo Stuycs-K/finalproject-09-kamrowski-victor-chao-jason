@@ -15,10 +15,10 @@ public class Op_Two {
         BigInteger c = Op_One.C;
         BigInteger d = Op_One.D;
         BigInteger G1 = G(b, c, d);
-        int gindex = (5*x+1)%16;
-        
+        int gindex = (5 * x + 1) % 16;
+
         BigInteger MofG = Padding.hexStrings[gindex];
-        BigInteger KofI = new BigInteger(Utils.KConstants[x],16);
+        BigInteger KofI = new BigInteger(Utils.KConstants[x], 16);
         int SofI = Utils.SValues[x];
 
         // adding all tgt
