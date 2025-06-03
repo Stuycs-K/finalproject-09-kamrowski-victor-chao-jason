@@ -8,7 +8,7 @@ This document must be updated daily every time you finish a work session.
 **In Class**  
  - Found reference articles detailing the MD5 algorithm steps. (15 mins)
  - Created files that contain each individual step, and then a Main that combines it all together. (5 mins)
- 
+
 **At Home**
  - Read the rest of the in-depth article on MD5. (45 mins)
 
@@ -60,9 +60,13 @@ This document must be updated daily every time you finish a work session.
 **In Class**
  - Removed debug print statements and unnecessary code. (10 mins)
  - Added another condition for arguments. Input string must be at most 55 characters for reasons detailed in our presentation. (5 mins)
- - Created Bash scripts to run the terminal's `md5sum` and our md5 algorithm on 100 lines from the rockyou list. (25 mins) 
+ - Created Bash scripts to run the terminal's `md5sum` and our md5 algorithm on 100 lines from the rockyou list. (25 mins)
 
 **At Home**
  - Formatted all files. (5 mins)
  - Updated README to include `make compile` when running the program. (1 min)
  - Ran the Bash scripts and took note of time differences. Did 5 trials. Stored data in `runtimes.txt`. (20 mins)
+
+ ### 2025-06-03 - Added Debug Mode
+ **In Class**
+  - Created debug mode for our algorithm, which prints out ABCD values at each iteration. (30 mins)

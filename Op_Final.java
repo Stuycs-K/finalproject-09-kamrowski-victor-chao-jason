@@ -16,7 +16,7 @@ public class Op_Final {
         return sb.toString();
     }
 
-    public static void opFinal() {
+    public static void opFinal(boolean debug) {
         Op_One.AA = Op_One.AA.add(Op_One.A).and(Op_One.mask32);
         Op_One.BB = Op_One.BB.add(Op_One.B).and(Op_One.mask32);
         Op_One.CC = Op_One.CC.add(Op_One.C).and(Op_One.mask32);
@@ -27,10 +27,10 @@ public class Op_Final {
         String hexC = bigIntToHexLittleEndian(Op_One.CC);
         String hexD = bigIntToHexLittleEndian(Op_One.DD);
 
-        // System.out.println("Final A: " + hexA);
-        // System.out.println("Final B: " + hexB);
-        // System.out.println("Final C: " + hexC);
-        // System.out.println("Final D: " + hexD);
+        if (debug) {
+            System.out.println("Final" + "\t|\t" + hexA + "\t" + hexB + "\t" + hexC + "\t" + hexD);
+        }
+
         System.out.println(hexA + hexB + hexC + hexD);
     }
 }

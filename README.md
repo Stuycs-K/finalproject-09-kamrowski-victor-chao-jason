@@ -1,15 +1,15 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/am3xLbu5)
 # The MD5 Algorithm
- 
+
 ### JV Hashers
 
 Victor Kamrowski  
 Jason Chao
-       
+
 ### Project Description:
 
 This project is a program replicating the MD5 hashing algorithm. There will be files containing the significant individual operations within the algorithm, and a Main file that compiles it all together to do the hash in one go.
-  
+
 ### Instructions:
 
 **Installation**  
@@ -17,6 +17,7 @@ Clone the repository: `git clone git@github.com:Stuycs-K/finalproject-09-kamrows
 
 **Running the Program**  
 Run the main program to hash text: `make compile && make run ARGS="<input_string>"`.
+To run in debug mode: `make run-debug ARGS="<input_string>"`.
 
 ### Resources/ References:
 

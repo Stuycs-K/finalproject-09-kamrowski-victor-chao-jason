@@ -1,3 +1,5 @@
+** This is run off of 100 lines of rockyou.
+
     Actual  |  Our Program
 1.  0.07s   |  5.73s
 2.  0.06s   |  5.78s
