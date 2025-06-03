@@ -8,7 +8,7 @@ Jason Chao
 
 ### Project Description:
 
-This project is a program replicating the MD5 hashing algorithm. There will be files containing the significant individual operations within the algorithm, and a Main file that compiles it all together to do the hash in one go.
+This project is a program replicating the MD5 hashing algorithm (up to inputs with 55 characters). There will be files containing the significant individual operations within the algorithm, and a Main file that compiles it all together to do the hash in one go.
 
 ### Instructions:
 
@@ -19,7 +19,7 @@ Clone the repository: `git clone git@github.com:Stuycs-K/finalproject-09-kamrows
 Run the main program to hash text: `make compile && make run ARGS="<input_string>"`.
 To run in debug mode: `make run-debug ARGS="<input_string>"`.
 
-### Resources/ References:
+### Resources/References:
 
  - [in-depth](https://www.comparitech.com/blog/information-security/md5-algorithm-with-examples/)
  - [geeksforgeeks](https://www.geeksforgeeks.org/what-is-the-md5-algorithm/)
