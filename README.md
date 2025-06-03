@@ -25,3 +25,4 @@ To run in debug mode: `make run-debug ARGS="<input_string>"`.
  - [geeksforgeeks](https://www.geeksforgeeks.org/what-is-the-md5-algorithm/)
  - [wikipedia](https://en.wikipedia.org/wiki/MD5#Algorithm)
  - [MD5 Documentation](https://www.ietf.org/rfc/rfc1321.txt)
+ - [MD5 Debugger](https://twy.name/Tools/Hash/md5.html)

@@ -73,3 +73,21 @@ Output final hash:
 E.g. "" (zero-length string): d41d8cd98f00b204e9800998ecf8427e
 
 ## MD5 Limitations
+
+-- Collisions found as early as 2004
+-- SHA-2 and SHA-3 are better than MD5 for password hashing and cryptographic digital signatures
+
+## MD5 Summary/Takeaway
+
+-- Classic hash function
+-- Processes 512-bit chucks using 4 rounds with different bitwise functions
+-- Output is 128-bit/32-length-hex-string
+-- Not good for modern cryptography, better for educational purposes
+
+## References and Resources
+
+ - [in-depth](https://www.comparitech.com/blog/information-security/md5-algorithm-with-examples/)
+ - [geeksforgeeks](https://www.geeksforgeeks.org/what-is-the-md5-algorithm/)
+ - [wikipedia](https://en.wikipedia.org/wiki/MD5#Algorithm)
+ - [MD5 Documentation](https://www.ietf.org/rfc/rfc1321.txt)
+ - [MD5 Debugger](https://twy.name/Tools/Hash/md5.html)
