@@ -68,3 +68,8 @@ D = D + DD
 -- Mod A,B,C,D to fit 32-bits
 -- Make each hex value be represented in little endian
 -- Append all (A append B append C append D)
+
+Output final hash:
+E.g. "" (zero-length string): d41d8cd98f00b204e9800998ecf8427e
+
+## MD5 Limitations
