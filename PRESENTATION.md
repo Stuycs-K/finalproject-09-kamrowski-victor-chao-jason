@@ -86,8 +86,8 @@ E.g. "" (zero-length string): d41d8cd98f00b204e9800998ecf8427e
 
 ## References and Resources
 
- - [in-depth](https://www.comparitech.com/blog/information-security/md5-algorithm-with-examples/)
- - [geeksforgeeks](https://www.geeksforgeeks.org/what-is-the-md5-algorithm/)
- - [wikipedia](https://en.wikipedia.org/wiki/MD5#Algorithm)
+ - [in-depth explanation](https://www.comparitech.com/blog/information-security/md5-algorithm-with-examples/)
+ - [geeksforgeeks explanation](https://www.geeksforgeeks.org/what-is-the-md5-algorithm/)
+ - [wikipedia explanation](https://en.wikipedia.org/wiki/MD5#Algorithm)
  - [MD5 Documentation](https://www.ietf.org/rfc/rfc1321.txt)
  - [MD5 Debugger](https://twy.name/Tools/Hash/md5.html)
