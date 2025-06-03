@@ -23,4 +23,19 @@
 
 ## Step 1: Message Padding
 
-- 
+-- Turn inputted string into binary
+-- Append a '1' to end of string binary
+-- After, pad with '0's until length of 448 bits is reached
+
+## Step 2: Append Length
+
+-- Append **64-bit little-endian** of input length in binary
+-- New message length is 512 bits
+
+## Step 3: Initialize Buffers
+
+-- Initialize the 4 32-bit buffers: A = 0x67452301, B = 0xEFCDAB89, C = 0x98BADCFE, D = 0x10325476
+
+-- These values are updated each operation round
+
+## Step 4: 
