@@ -19,6 +19,10 @@ Clone the repository: `git clone git@github.com:Stuycs-K/finalproject-09-kamrows
 Run the main program to hash text: `make compile && make run ARGS="<input_string>"`.
 To run in debug mode: `make run-debug ARGS="<input_string>"`.
 
+### Presentation:
+- [Google Drive Video](https://drive.google.com/file/d/1qyk5aMh3lLwHmW4E9JOpVp3-dfRMZYbb/view?usp=drive_link)
+- [PRESENTATION.MD](https://github.com/Stuycs-K/finalproject-09-kamrowski-victor-chao-jason/blob/main/PRESENTATION.md)
+
 ### Resources/References:
 
  - [in-depth explanation](https://www.comparitech.com/blog/information-security/md5-algorithm-with-examples/)
