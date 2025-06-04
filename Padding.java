@@ -7,7 +7,7 @@ public class Padding {
                                                                 // will
                                                                 // be 16 hex vals.
 
-    public static String pad(String inputStr) {
+    public static String pad(String inputStr, boolean debug) {
         StringBuilder binary = new StringBuilder();
         for (int x = 0; x < inputStr.length(); x++) {
             int forbin = (int) inputStr.charAt(x);
@@ -16,19 +16,32 @@ public class Padding {
 
         long lengthpad = binary.length();
 
+        if (debug) {
+            System.out.println("Binary string: \n" + binary.toString());
+        }
+
         binary.append("1");
+
+        if (debug) {
+            System.out.println("Binary after appending 1: \n" + binary.toString());
+        }
 
         while (binary.length() % 512 != 448) {
             binary.append("0");
         }
         String lengthBin = String.format("%64s", Long.toBinaryString(lengthpad)).replace(' ', '0'); // end with 64
                                                                                                     // bits of length
+
         StringBuilder lengthstring = new StringBuilder();
         for (int x = 0; x < 8; x++) {
             String bytestr = lengthBin.substring(56 - 8 * x, 64 - 8 * x);
             lengthstring.append(bytestr);
         }
         binary.append(lengthstring.toString());
+
+        if (debug) {
+            System.out.println("Binary after padding: \n" + binary.toString());
+        }
 
         return binary.toString();
     }

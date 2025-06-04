@@ -17,7 +17,7 @@ public class Main {
         }
 
         Padding.input = Padding.input.trim();
-        String paddedStr = Padding.pad(Padding.input);
+        String paddedStr = Padding.pad(Padding.input, false);
         Padding.bitSchedule(paddedStr);
 
         Op_One.A = new BigInteger("67452301", 16);

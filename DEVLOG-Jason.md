@@ -67,6 +67,9 @@ This document must be updated daily every time you finish a work session.
  - Updated README to include `make compile` when running the program. (1 min)
  - Ran the Bash scripts and took note of time differences. Did 5 trials. Stored data in `runtimes.txt`. (20 mins)
 
- ### 2025-06-03 - Added Debug Mode
- **In Class**
-  - Created debug mode for our algorithm, which prints out ABCD values at each iteration. (30 mins)
+### 2025-06-03 - Added Debug Mode
+**In Class**
+ - Created debug mode for our algorithm, which prints out ABCD values at each iteration. (30 mins)
+
+**At Home**
+ - Simplified debug mode to only print out ABCD values at the end of each round. Also printed out the binary string at the Padding stage. (15 mins)
