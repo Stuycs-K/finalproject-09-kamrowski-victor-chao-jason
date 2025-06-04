@@ -48,7 +48,7 @@
 -- The 512-bit binary chunk is split into 16 blocks of 32 bits (M[g], g ∈ [0,15])  
 -- Initialize 64 per-round shift amounts (predetermined) for rotating the binary string (s[i], s ∈ [0,63])  
 -- Initialize 64 values for K[i] to add in the algorithm, based on K[i] = floor(2^32 * abs(sin(i + 1))), for i ∈ [0,63]  
--- Run 64 rounds of bitwise algorithms.
+-- Run 64 rounds of bitwise algorithms.  
 -- **Rounds 1-16**: Function F(B, C, D): (B and C) or (not B and D)  
 -- **Rounds 17-32**: Function G(B, C, D): (B and D) or (C and not D)  
 -- **Rounds 33-48**: Function H(B, C, D): B xor C xor D  
