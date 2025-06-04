@@ -80,7 +80,7 @@ At home:
 - Changed modular addition to take as many inputs as needed (10 mins)
 - Created an actual shift method instead of just including in various operations. Used BigInteger methods instead of doing it through annoying bit/binary string manipulations (15 mins)
 
-### 2025-05-30/31/6-1: Implemented little endian hex strings (BigIntegers) into main, works for first operation now
+### 2025-05-30/31/6-1: Implemented little endian hex strings (BigIntegers) into main, fixed errors, fixed final operation, tested final version and works
 
 In class:
 - Cleaned the main a decent amount, and instead of looping in the main, used bitScedule method which did it itself in little endian (20 mins)
@@ -93,3 +93,23 @@ At home:
 - Edited all four operations to optimize the algorithm (30 mins)
 - Fixed final operation and made method to showcase final hex values properly in little endian as well (20 mins)
 - Tested with many different test cases (10 mins)
+
+### 2025-06-02: Started planning presentation and research
+
+In class:
+- Planning presentation (25 mins)
+- MD5 background research (15 mins)
+
+At home:
+- Started presentation.md (20 mins)
+
+### 2025-06-03: Finished presentation.md, fully edited readme, created video script, recorded video
+
+In class:
+- Continued to edit presentation.md (30 mins)
+- Added resources and edited readme (10 mins)
+
+At home:
+- Finished presentation.md (10 mins)
+- Wrote script for video, planned video structure, multiple test runs (60 mins)
+- Final video + upload and update readme (20 mins)
