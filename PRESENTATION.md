@@ -35,7 +35,11 @@
 
 ## Step 3: Initialize Buffers
 
--- Initialize the 4 32-bit buffers: A = 0x67452301, B = 0xEFCDAB89, C = 0x98BADCFE, D = 0x10325476
+-- Initialize the 4 32-bit buffers: 
+ - A = 0x67452301
+ - B = 0xEFCDAB89
+ - C = 0x98BADCFE
+ - D = 0x10325476
 
 -- These values are updated each operation round
 
