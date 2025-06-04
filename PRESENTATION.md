@@ -4,10 +4,11 @@
 
 ## What is MD5?
 
--- **MD5 (Message Digest 5)** is a cryptographic (for the means of security) hash function  
+-- **MD5 (Message Digest 5)** is a cryptographic (for the means of security) hash function designed by Ronald Rivest in 1991
+-- It replaced hash function MD4 as MD4 was indicated by analytic work that it was insecure
 -- MD5 takes any length input and converts it into a **16-byte/128-bit** hash (in hex)  
 -- It is used for verifying file and data integrity, password storage, and digital signatures  
--- However, MD5 is old and not secure. It is susceptible to collision attacks (finding two inputs that give the same output)  
+-- However, MD5 is old and not secure. It is susceptible to collision attacks (finding two inputs that give the same output)
 
 ---
 
